@@ -10,6 +10,16 @@ router.get("/", function (req, res) {
         };
         console.log(hbsObject);
         res.render("index", hbsObject);
+    });
+});
+router.post("/",function(req,res){
+    burger.insert(req.body.name, function (data) {
+        res.json(data);
+    })
+});
+router.put("/:id",function(req,res){
+    burger.update(req.params.id, function (data) {
+        res.json(data);
     })
 });
 

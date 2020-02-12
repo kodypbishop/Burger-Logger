@@ -4,7 +4,7 @@ let connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "Jang0f3tt",
+  password: "rootroot",
   database: "burger_db"
 });
 
